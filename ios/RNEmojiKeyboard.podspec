@@ -1,17 +1,16 @@
+require 'json'
+version = JSON.parse(File.read('../package.json'))["version"]
 
 Pod::Spec.new do |s|
   s.name         = "RNEmojiKeyboard"
   s.version      = "1.0.0"
-  s.summary      = "RNEmojiKeyboard"
-  s.description  = <<-DESC
-                  RNEmojiKeyboard
-                   DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/brendan-rius/react-native-emoji-keyboard"
+  s.summary      = "Emoji keyboard for React Native"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNEmojiKeyboard.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/author/RNEmojiKeyboard.git", :tag => "v#{s.version}" }
   s.source_files  = "RNEmojiKeyboard/**/*.{h,m}"
   s.requires_arc = true
 
@@ -20,5 +19,3 @@ Pod::Spec.new do |s|
   #s.dependency "others"
 
 end
-
-  
