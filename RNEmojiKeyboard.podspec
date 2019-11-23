@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author             = { "author" => "author@domain.cn" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/author/RNEmojiKeyboard.git", :tag => "v#{s.version}" }
-  s.source_files  = "RNEmojiKeyboard/**/*.{h,m}"
+  s.source_files  = "ios/**/*"
   s.requires_arc = true
 
 
